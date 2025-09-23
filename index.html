@@ -541,7 +541,7 @@ function submitForm() {
 }
 
 function sendToWhatsApp() {
-    const phoneNumber = "212656265615";
+    const phoneNumber = "212770801287";
     const message = `تسجيل جديد - الدعم المدرسي%0A%0Aالطالب: ${document.getElementById('firstName').value} ${document.getElementById('lastName').value}%0Aرقم الهاتف: ${document.getElementById('phone').value}%0Aالبريد الإلكتروني: ${document.getElementById('email').value || 'غير محدد'}%0Aتاريخ الميلاد: ${document.getElementById('birthDate').value}%0Aالجنس: ${document.getElementById('gender').value}%0Aالمستوى الدراسي: ${document.getElementById('educationLevel').value}%0Aالصف الدراسي: ${document.getElementById('grade').value}%0Aالمواد التي تحتاج دعم: ${getSelectedSubjects().join(', ') || 'غير محدد'}%0Aملاحظات إضافية: ${document.getElementById('notes').value || 'لا توجد'}`;
     
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
